@@ -23,12 +23,12 @@ with st.sidebar:
   gender = st.selectbox('sex',('male','female'))
   bill_length_mm = st.slider('bill_length_mm', 32.1,59.6,43.9)
 
-    data = {'island': island,
-          'bill_length_mm': bill_length_mm,
-          'bill_depth_mm': bill_depth_mm,
-          'flipper_length_mm': flipper_length_mm,
-          'body_mass_g': body_mass_g,
-          'sex': gender}
+  data = {'island': island,
+        'bill_length_mm': bill_length_mm,
+        'bill_depth_mm': bill_depth_mm,
+        'flipper_length_mm': flipper_length_mm,
+        'body_mass_g': body_mass_g,
+        'sex': gender}
 
 with st.expander('Sample'):
   st.write('**input_penguins**')
