@@ -45,7 +45,7 @@ target_mapper = {'Adelie': 0,
                  'Chinstrap': 1,
                  'Gentoo': 2}
 target_mapper = lambda p:target_mapper[p]
-st.write(**Value = **,target_mapper('Chinstrap'))
+st.write(target_mapper('Chinstrap'))
   
 
 with st.expander('Input features'):
