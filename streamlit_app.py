@@ -45,13 +45,20 @@ target_mapper = {'Adelie': 0,
                  'Chinstrap': 1,
                  'Gentoo': 2}
 target = lambda p:target_mapper[p]
-st.write(target('Chinstrap'))
-  
+
+y = y.apply(target)  
 
 with st.expander('Input features'):
   st.write('**Input penguin**')
   input_df
   st.write('**Combined penguins data**')
   input_penguins
+
+
+with st.expander('Data Preparation'):
   st.write('**encoded input row**')
   input_row
+  st.write('**encoded y **')
+  y
+  
+  
