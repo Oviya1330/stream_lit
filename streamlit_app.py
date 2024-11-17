@@ -59,6 +59,6 @@ with st.expander('Data Preparation'):
   st.write('**encoded input row**')
   input_row
   st.write('**encoded y **')
-  y
+  Y
   
   
