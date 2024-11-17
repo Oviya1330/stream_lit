@@ -1,5 +1,6 @@
 import streamlit as st
 import  pandas as pd 
+from sklearn.ensemble import RandomForestClassifier
 st.title('ML app 😒')
 
 st.info('This is a ML app')
@@ -62,4 +63,11 @@ with st.expander('Data Preparation'):
   st.write('**encoded y **')
   Y
   
-  
+clf = RandomForestClassifier()
+clf.fit(X,Y)
+
+
+prediction = clf.predict(input_row)
+prediction_proba = clf.predict_proba(input_row)
+with st.expander('Prediction'):
+  prediction
