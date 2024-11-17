@@ -46,7 +46,7 @@ target_mapper = {'Adelie': 0,
                  'Gentoo': 2}
 target = lambda p:target_mapper[p]
 
-y = y.apply(target)  
+Y = Y.apply(target)  
 
 with st.expander('Input features'):
   st.write('**Input penguin**')
