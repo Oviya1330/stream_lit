@@ -41,6 +41,13 @@ encode = ['island', 'sex']
 df_penguins = pd.get_dummies(input_penguins, prefix=encode)
 input_row = df_penguins[:1]
 
+target_mapper = {'Adelie': 0,
+                 'Chinstrap': 1,
+                 'Gentoo': 2}
+target_mapper = lambda p:target_mapper[p]
+st.write(**Value = **,target_mapper('Chinstrap'))
+  
+
 with st.expander('Input features'):
   st.write('**Input penguin**')
   input_df
