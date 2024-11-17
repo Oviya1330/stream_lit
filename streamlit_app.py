@@ -46,7 +46,7 @@ target_mapper = {'Adelie': 0,
                  'Chinstrap': 1,
                  'Gentoo': 2}
 target = lambda p:target_mapper[p]
-target_rev = {i[1]:i[0] for i in target_mapper.item()}
+
 
 Y = Y.apply(target)  
 
