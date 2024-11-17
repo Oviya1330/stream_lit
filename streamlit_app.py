@@ -57,7 +57,7 @@ with st.expander('Input features'):
 
 with st.expander('Data Preparation'):
   st.write('**encoded input row**')
-  input_row
+  X = input_row[:1]
   st.write('**encoded y **')
   Y
   
