@@ -44,7 +44,7 @@ input_row = df_penguins[:1]
 target_mapper = {'Adelie': 0,
                  'Chinstrap': 1,
                  'Gentoo': 2}
-target_mapper = lambda p:target_mapper[p]
+target = lambda p:target_mapper[p]
 st.write(target_mapper('Chinstrap'))
   
 
