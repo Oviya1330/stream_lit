@@ -46,6 +46,7 @@ target_mapper = {'Adelie': 0,
                  'Chinstrap': 1,
                  'Gentoo': 2}
 target = lambda p:target_mapper[p]
+target_rev = {i[1]:i[0] for i in target_mapper.item()}
 
 Y = Y.apply(target)  
 
@@ -71,3 +72,9 @@ prediction = clf.predict(input_row)
 prediction_proba = clf.predict_proba(input_row)
 with st.expander('Prediction'):
   prediction
+df_prediction_proba = pd.DataFrame(prediction_proba)
+df_prediction_proba.columns = ['Adelie', 'Chinstrap', 'Gentoo']
+df_prediction_proba.rename(columns={0: 'Adelie',
+                                 1: 'Chinstrap',
+                                 2: 'Gentoo'})
+df_prediction_proba
